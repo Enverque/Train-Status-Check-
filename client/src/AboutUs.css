@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.more {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 10vw;
+  padding: 5vh 15vw;
+  background-color: white;
+  color: black;
+  height: 50vh;
+  margin-top: -10.2vh;
+}
+
+.more h2 {
+  text-align: center;
+}
+
+.aboutus_1,
+.aboutus_2,
+.aboutus_3,
+.aboutus_4 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  max-width: 30vw;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.aboutus_1 img,
+.aboutus_2 img,
+.aboutus_3 img,
+.aboutus_4 img {
+  height: 40px;
+  width: 40px;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 1024px) {
+  .more {
+    grid-template-columns: 1fr;
+    padding: 3vh 10vw;
+    height: auto;
+  }
+
+  .aboutus_1,
+  .aboutus_2,
+  .aboutus_3,
+  .aboutus_4 {
+    max-width: 80vw;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutus_1,
+  .aboutus_2,
+  .aboutus_3,
+  .aboutus_4 {
+    font-size: 0.8rem;
+  }
+}

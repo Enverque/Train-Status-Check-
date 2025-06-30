@@ -1,0 +1,170 @@
+.PNR_box{
+    height: 25vh;
+    background-color: rgb(130, 212, 131);
+    max-width: 100vw;
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+}
+.pnr_number{
+    width: 60vw;
+    height: 10vh;
+    background-color: white;
+    margin: 0 20vw;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.pnr_number input{
+    width: 40vw;
+    height: 10vh;
+    border-radius: 0.8rem;
+    font-size: 23px;
+    padding-left: 10px;
+    color: black !important;
+    background-color: white !important;
+    outline: none;
+}
+.pnr_number button{
+    width: 9vw;
+    height: 10vh;
+    font-size: 23px;
+    background-color: rgb(35, 35, 102);
+    border: 2px solid transparent; 
+    outline: none;
+    border-radius: 0.8rem;
+}
+.details{
+    height: 50vh;
+    width: 25vw;
+    border: 2px solid yellow;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 1rem;
+    background-color: rgb(222, 223, 225);
+    margin: 2rem 37.5vw;
+}
+.details p{
+    height: 40px;
+    width: auto;
+    background-color: white;
+    color: black;
+    width: max-content;
+    padding: 3px 10px;
+    background-color: rgb(196, 194, 194);
+    border-radius: 0.3rem;
+    text-align: center;
+}
+.details input{
+    height: 40px;
+    width: fit-content;
+    padding-left: 5px;
+    background-color: rgb(196, 194, 194);
+    border-radius: 0.3rem;
+    color: rgb(0, 64, 104);
+    width: 12rem;
+    outline: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.DOJ input{
+    width: max-content;
+    padding-left: 5px;
+    background-color: rgb(196, 194, 194);
+    border-radius: 0.3rem;
+    font-size: 20px;
+    color: rgb(0, 64, 104);
+    width: 18rem;
+    outline: none;
+    font-weight: 1000;
+}
+.train_name, .Booking_Status , .DOJ , .Current_Status , .Chart_Prepared{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.train_name input{
+    width: 16rem;
+    outline: none;
+}
+
+@media (max-width: 1024px) {
+  .pnr_number {
+    width: 80vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .pnr_number input,
+  .pnr_number button {
+    width: 90%;
+    height: 3.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .details {
+    width: 80vw;
+    margin: 2rem auto;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .details p {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .details input,
+  .DOJ input,
+  .train_name input {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .train_name,
+  .Booking_Status,
+  .DOJ,
+  .Current_Status,
+  .Chart_Prepared {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pnr_number {
+    width: 90vw;
+  }
+
+  .details {
+    width: 90vw;
+  }
+
+  .pnr_number input,
+  .pnr_number button,
+  .details input,
+  .DOJ input,
+  .train_name input {
+    font-size: 0.95rem;
+    height: 3rem;
+  }
+
+  .train_name,
+  .Booking_Status,
+  .DOJ,
+  .Current_Status,
+  .Chart_Prepared {
+    font-size: 1rem;
+  }
+
+  .details p {
+    font-size: 0.95rem;
+  }
+}

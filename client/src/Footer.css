@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: rgb(223, 225, 223);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 2rem;
+  color: black;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.mylogo {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.mylogo img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.mylogo p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.book,
+.features,
+.aboutTatkal,
+.partners,
+.legal,
+.apps,
+.follow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.footer a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.socialmedia img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(223, 225, 223);
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mylogo {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  
+  .footer > div {
+    align-items: center;
+    text-align: center;
+  }
+}
