@@ -35,7 +35,7 @@
 
 .train-search button {
   padding: 12px 24px;
-  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  background-color: #1f4e8c;
   color: white;
   border: none;
   border-radius: 6px;
@@ -46,12 +46,11 @@
 }
 
 .train-search button:hover {
-  background: linear-gradient(to right, #1d4ed8, #1e40af);
+  background-color: #9ca3af;
   transform: translateY(-1px);
 }
 
 .train-search button:disabled {
-  background: #9ca3af;
   transform: none;
   cursor: not-allowed;
 }
@@ -60,6 +59,20 @@
   color: #666;
   margin-left: 5px;
   font-style: italic;
+}
+
+/* Arrival: original time cut with red line + corrected time */
+.arrival-original-cut {
+  color: #dc2626;
+  text-decoration: line-through;
+  text-decoration-color: #dc2626;
+  text-decoration-thickness: 2px;
+  margin-right: 8px;
+}
+
+.arrival-actual {
+  font-weight: 600;
+  color: #374151;
 }
 
 /* Loading spinner */
@@ -178,6 +191,28 @@
   font-weight: 500;
 }
 
+/* Departed station badge */
+.departed-badge {
+  background-color: #d97706;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* Next station badge */
+.next-badge {
+  background-color: #059669;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
 /* Status badges */
 .status-badge {
   padding: 4px 10px;
@@ -234,7 +269,7 @@
     font-size: 13px;
   }
   
-  .status-badge, .current-badge {
+  .status-badge, .current-badge, .departed-badge, .next-badge {
     font-size: 11px;
   }
 }

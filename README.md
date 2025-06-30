@@ -22,50 +22,51 @@ A full-stack web application to check **Indian Railway PNR status** and **track 
 
 ## ⚙️ Technologies Used
 
-| Layer       | Tools                             |
-|-------------|-----------------------------------|
-| Frontend    | React (Vite)                      |
-| Styling     | CSS
-| Backend     | Node.js + Express.js              |
-| HTTP Client | Axios                             |
-| API         | RapidAPI – IRCTC + Live Train APIs|
+| Layer       | Tools                              |
+|-------------|------------------------------------|
+| Frontend    | React (Vite)                       |
+| Styling     | CSS                                |
+| Backend     | Node.js + Express.js               |
+| HTTP Client | Axios                              |
+| API         | RapidAPI – IRCTC + Live Train APIs |
 
-## How it Works
+---
+
+## How It Works
 
 1. User enters a valid **PNR number**
-2. Frontend sends a request to backend 
-3. Backend sends API request to RapidAPI IRCTC endpoint
-4. Response is parsed and sent back to frontend
+2. Frontend sends a request to the backend
+3. Backend sends an API request to the RapidAPI IRCTC endpoint
+4. Response is parsed and sent back to the frontend
 5. User sees PNR details and live train location
 
-   
 ### APIs Used
+
 - 📍 [Live Train Location API (Train Running Status)](https://rapidapi.com/)
 
+---
 
-## How to Run Locally Step-by-Step Instructions
+## How to Run Locally
 
-### 1. Clone the GitHub Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Enverque/Train-Status-Check-.git
 cd Train-Status-Check-
 ```
 
-  
-  ### 2. Start the Backend
-  
-  ```bash
-  cd Server
-  npm install
-  node main.js
+### 2. Start the backend
+
+```bash
+cd Server
+npm install
+node server.js
 ```
 
-3. Start the Frontend
- ```
-  cd client
-  npm install
-  npm run dev
+### 3. Start the frontend
+
+```bash
+cd client
+npm install
+npm run dev
 ```
-
-

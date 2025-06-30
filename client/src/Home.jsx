@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import AboutUs from './AboutUs';
 import PnrStatus from './PnrStatus';
 import TatkalContent from './TatkalContent';
