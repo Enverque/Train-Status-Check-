@@ -35,7 +35,7 @@
 
 .train-search button {
   padding: 12px 24px;
-  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  background-color: #1f4e8c;
   color: white;
   border: none;
   border-radius: 6px;
@@ -46,12 +46,11 @@
 }
 
 .train-search button:hover {
-  background: linear-gradient(to right, #1d4ed8, #1e40af);
+  background-color: #9ca3af;
   transform: translateY(-1px);
 }
 
 .train-search button:disabled {
-  background: #9ca3af;
   transform: none;
   cursor: not-allowed;
 }

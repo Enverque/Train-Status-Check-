@@ -17,19 +17,6 @@ const PnrStatus = () => {
 
   return (
     <div className='pnr-container'>
-      <div className="pnr-input-container">
-        <input 
-          type="text" 
-          className="pnr-input" 
-          placeholder="Please Enter Your PNR Number" 
-          value={pnr} 
-          onChange={handleChange}
-        />
-        <button className="pnr-button" onClick={handleSubmit}>
-          <span className="button-text">Search</span>
-          <span className="button-icon">→</span>
-        </button>
-      </div>
     </div>
   );
 };
