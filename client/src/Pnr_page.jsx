@@ -1,11 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useReactToPrint } from "react-to-print";
-import { configure, checkPNRStatus } from 'railkit';
 import Navbar from './Navbar';
 import './Pnr_page.css';
 
-// Initialize with your API key from .env
-configure(import.meta.env.VITE_RAILKIT_API_KEY);
 
 function Pnr_page() {
     const [pnrResult, setPnrResult] = useState(null);
@@ -29,7 +26,8 @@ function Pnr_page() {
                 throw new Error('Invalid PNR. Please enter a 10-digit number.');
             }
             
-            const result = await checkPNRStatus(searchPnr);
+            const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/pnr/${searchPnr}`);
+            const result = await res.json();
             console.log('PNR Data:', result);
             
             if (result) {

@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import { configure, checkPNRStatus } from 'railkit';
 import './PnrStatus.css';
 
-// Initialize with your API key from .env
-configure(import.meta.env.VITE_RAILKIT_API_KEY);
 
 const PnrStatus = () => {
   const [pnr, setPnr] = useState('');
@@ -17,7 +14,8 @@ const PnrStatus = () => {
     if (pnr) {
       console.log('PNR Search submitted:', pnr);
       try {
-        const response = await checkPNRStatus(pnr);
+        const res = await fetch(`${import.meta.env.VITE_API_URL || "http://localhost:8000"}/api/pnr/${pnr}`);
+        const response = await res.json();
         console.log('PNR Data:', response);
         setPnrData(response);
       } catch (error) {
