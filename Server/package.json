@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "node --watch server.js"
   },
   "author": "Himanshu",
   "license": "ISC",
@@ -14,7 +14,6 @@
     "axios": "^1.10.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10",
     "path": "^0.12.7",
     "path-to-regexp": "^8.2.0",
     "react-to-print": "^3.1.1",
